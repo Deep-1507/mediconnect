@@ -73,7 +73,7 @@ To start the backend server, navigate to the `root` directory and run:
 npm start
 ```
 
-The backend server will start and you can access it at `http://localhost:5000`.
+The backend server will start and you can access it at `http://localhost:8000`.
 
 
 ## Why Install npm Dependencies Separately?
