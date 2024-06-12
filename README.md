@@ -75,12 +75,15 @@ npm start
 
 The backend server will start and you can access it at `http://localhost:5000`.
 
-### Project Workflow
+###Why Install npm Dependencies Separately?
 
-    - Work on the frontend by modifying files in the `frontend` directory.
-    - Work on the backend by modifying files in the `backend` directory.
-    - Ensure you test changes locally before committing.
+Each directory (frontend and backend) contains its own package.json file, which lists the dependencies specific to that part of the project. This separation is essential because:
 
+**Dependency Management**: The frontend and backend have different sets of dependencies, which are managed independently. This ensures that each part of the project only installs the packages it requires, reducing potential conflicts and unnecessary bloat.
+
+**Isolation**: By installing dependencies separately, we maintain a clear separation between the client-side and server-side codebases. This helps in debugging and ensures that changes in one part do not inadvertently affect the other.
+
+**Microservices Architecture**: This approach aligns with best practices in microservices and modular application design, where different services or modules manage their dependencies independently.
 
 ### Contributors
 
