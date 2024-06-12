@@ -1,4 +1,4 @@
-# FRT Project Submission 
+# Microsoft FRT Internship Project Submission 
 
 ### README for MediConnect
 
@@ -75,6 +75,7 @@ npm start
 
 The backend server will start and you can access it at `http://localhost:5000`.
 
+
 ## Why Install npm Dependencies Separately?
 
 Each directory (frontend and backend) contains its own package.json file, which lists the dependencies specific to that part of the project. This separation is essential because:
@@ -85,7 +86,9 @@ Each directory (frontend and backend) contains its own package.json file, which 
 
 **Microservices Architecture**: This approach aligns with best practices in microservices and modular application design, where different services or modules manage their dependencies independently.
 
+
 ## Functionalities
+
 MediConnect provides the following functionalities:
 
 ### User Registration
@@ -102,7 +105,7 @@ Patients can book appointments with registered doctors based on their availabili
 **Doctor's Acceptance**: Doctors can view and accept or reject appointment requests from patients.
 **Moderator Approval**: A moderator reviews and approves the registration of doctors to ensure that only verified professionals are listed on the platform.
 
-### Contributors
+## Contributors
 
-- Deependra Kumar
-- Ritu Verma
+ Deependra Kumar
+ Ritu Verma
