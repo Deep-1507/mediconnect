@@ -6,7 +6,7 @@
 
 Welcome to MediConnect, a medical healthcare website aimed at providing seamless interaction between patients and healthcare providers.
 
-# This project is developed by Deependra Kumar and Ritu Verma.
+### This project is developed by Deependra Kumar and Ritu Verma.
 
 ## Project Structure
 
