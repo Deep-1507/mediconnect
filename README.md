@@ -12,8 +12,8 @@ Welcome to MediConnect, a medical healthcare website aimed at providing seamless
 
 The project repository contains the following primary directories:
 
- Client Directory : Contains the files related to the user interface of the website.
- Root Directory : Contains the server-side code and APIs for the website.
+- 1. Client Directory : Contains the files related to the user interface of the website.
+- 2. Root Directory : Contains the server-side code and APIs for the website.
 
 ## Getting Started
 
@@ -107,5 +107,5 @@ Patients can book appointments with registered doctors based on their availabili
 
 ## Contributors
 
- Deependra Kumar
- Ritu Verma
+- Deependra Kumar
+- Ritu Verma
