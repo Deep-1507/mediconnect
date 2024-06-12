@@ -12,8 +12,8 @@ Welcome to MediConnect, a medical healthcare website aimed at providing seamless
 
 The project repository contains the following primary directories:
 
-- 1. Client Directory : Contains the files related to the user interface of the website.
-- 2. Root Directory : Contains the server-side code and APIs for the website.
+-  Client Directory : Contains the files related to the user interface of the website.
+-  Root Directory : Contains the server-side code and APIs for the website.
 
 ## Getting Started
 
@@ -93,17 +93,17 @@ MediConnect provides the following functionalities:
 
 ### User Registration
 
-**Doctor Registration**: Doctors can register on the platform by providing their details, credentials, and areas of expertise.
-**Patient Registration**: Patients can create accounts by providing their personal details and medical history.
+- **Doctor Registration**: Doctors can register on the platform by providing their details, credentials, and areas of expertise.
+- **Patient Registration**: Patients can create accounts by providing their personal details and medical history.
 
 ### Patient Appointment Booking
 
-Patients can book appointments with registered doctors based on their availability and specialization.
+- Patients can book appointments with registered doctors based on their availability and specialization.
 
 ### Appointment Management
 
-**Doctor's Acceptance**: Doctors can view and accept or reject appointment requests from patients.
-**Moderator Approval**: A moderator reviews and approves the registration of doctors to ensure that only verified professionals are listed on the platform.
+- **Doctor's Acceptance**: Doctors can view and accept or reject appointment requests from patients.
+- **Moderator Approval**: A moderator reviews and approves the registration of doctors to ensure that only verified professionals are listed on the platform.
 
 ## Contributors
 
