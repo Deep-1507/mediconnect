@@ -75,7 +75,7 @@ npm start
 
 The backend server will start and you can access it at `http://localhost:5000`.
 
-###Why Install npm Dependencies Separately?
+## Why Install npm Dependencies Separately?
 
 Each directory (frontend and backend) contains its own package.json file, which lists the dependencies specific to that part of the project. This separation is essential because:
 
@@ -84,6 +84,23 @@ Each directory (frontend and backend) contains its own package.json file, which 
 **Isolation**: By installing dependencies separately, we maintain a clear separation between the client-side and server-side codebases. This helps in debugging and ensures that changes in one part do not inadvertently affect the other.
 
 **Microservices Architecture**: This approach aligns with best practices in microservices and modular application design, where different services or modules manage their dependencies independently.
+
+## Functionalities
+MediConnect provides the following functionalities:
+
+### User Registration
+
+**Doctor Registration**: Doctors can register on the platform by providing their details, credentials, and areas of expertise.
+**Patient Registration**: Patients can create accounts by providing their personal details and medical history.
+
+### Patient Appointment Booking
+
+Patients can book appointments with registered doctors based on their availability and specialization.
+
+### Appointment Management
+
+**Doctor's Acceptance**: Doctors can view and accept or reject appointment requests from patients.
+**Moderator Approval**: A moderator reviews and approves the registration of doctors to ensure that only verified professionals are listed on the platform.
 
 ### Contributors
 
