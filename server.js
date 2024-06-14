@@ -28,6 +28,12 @@ app.get("*", (req,res)=>{
   res.sendFile(path.resolve(__dirname,"client","build","index.html"))
 });
 
+//production files
+app.use(express.static("./client/build"));
+app.getMaxListeners("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client" , "build" , "index.html"))
+})
+
 
 //port
 const port = 8080;

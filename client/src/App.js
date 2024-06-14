@@ -28,10 +28,14 @@ function App() {
         const response = await fetch(`${baseUrl}/api/user`, {
           credentials: 'include'
         });
+        if (!response.ok) {
+          throw new Error('Failed to fetch user');
+        }
         const data = await response.json();
         dispatch(setUser(data));
       } catch (error) {
         console.error('Failed to fetch user', error);
+        // Optionally handle errors (e.g., show an error message)
       }
     };
 
@@ -41,28 +45,26 @@ function App() {
   const { loading } = useSelector((state) => state.alerts);
 
   return (
-    <>
-      <BrowserRouter>
-        {loading ? (
-          <Spinner />
-        ) : (
-          <Routes>
-            <Route path="/apply-doctor" element={<ProtectedRoute><ApplyDoctor /></ProtectedRoute>} />
-            <Route path="/admin/users" element={<ProtectedRoute><Users /></ProtectedRoute>} />
-            <Route path="/admin/doctors" element={<ProtectedRoute><Doctors /></ProtectedRoute>} />
-            <Route path="/doctor/profile/:id" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
-            <Route path="/doctor/book-appointment/:doctorId" element={<ProtectedRoute><BookingPage /></ProtectedRoute>} />
-            <Route path="/notification" element={<ProtectedRoute><NotificationPage /></ProtectedRoute>} />
-            <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
-            <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
-            <Route path="/appointments" element={<ProtectedRoute><Appointments /></ProtectedRoute>} />
-            <Route path="/doctor-appointments" element={<ProtectedRoute><DoctorAppointments /></ProtectedRoute>} />
-            <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
-            <Route path="/doctors" element={<ProtectedRoute><DoctorPage /></ProtectedRoute>} />
-          </Routes>
-        )}
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      {loading ? (
+        <Spinner /> // Show spinner while fetching user data
+      ) : (
+        <Routes>
+          <Route path="/apply-doctor" element={<ProtectedRoute><ApplyDoctor /></ProtectedRoute>} />
+          <Route path="/admin/users" element={<ProtectedRoute><Users /></ProtectedRoute>} />
+          <Route path="/admin/doctors" element={<ProtectedRoute><Doctors /></ProtectedRoute>} />
+          <Route path="/doctor/profile/:id" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+          <Route path="/doctor/book-appointment/:doctorId" element={<ProtectedRoute><BookingPage /></ProtectedRoute>} />
+          <Route path="/notification" element={<ProtectedRoute><NotificationPage /></ProtectedRoute>} />
+          <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
+          <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
+          <Route path="/appointments" element={<ProtectedRoute><Appointments /></ProtectedRoute>} />
+          <Route path="/doctor-appointments" element={<ProtectedRoute><DoctorAppointments /></ProtectedRoute>} />
+          <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+          <Route path="/doctors" element={<ProtectedRoute><DoctorPage /></ProtectedRoute>} />
+        </Routes>
+      )}
+    </BrowserRouter>
   );
 }
 
