@@ -29,13 +29,6 @@ app.get("*", (req,res)=>{
 });
 
 
-// production script
-app.use(express.static("./client/build"));
-app.delete("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client" , "build" , "index.html"))
-})
-
-
 //port
 const port = 8080;
 //listen port
