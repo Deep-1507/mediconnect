@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - MediConnect-app
+name: Build and deploy Node.js app to Azure Web App - MediConnect-App
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_769987C636FC479F9B74991738E0E0BA }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1A2AAD67E83747BA9425AAC56AD01B8D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_27E1E00417CF4A12A7C218EB2E232DF1 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FB48FDD1DD414439808DFB670631BA46 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_57149540A0114FCBA97063DF350FDBC9 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F953200BD64A49B4AA00EE61D2D191A8 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'MediConnect-app'
+          app-name: 'MediConnect-App'
           slot-name: 'Production'
           package: .
           
